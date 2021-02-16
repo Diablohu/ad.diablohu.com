@@ -1,0 +1,76 @@
+{
+    "name": "diablohu-admin-portal",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Source code for Diablohu's Admin Portal",
+    "author": {
+        "name": "diablohu",
+        "email": "diablohudream@gmail.com"
+    },
+    "homepage": "https://github.com/cmux/koot#readme",
+    "license": "none",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cmux/koot.git"
+    },
+    "engines": {
+        "node": ">=10.13.0"
+    },
+    "scripts": {
+        "start": "koot-start",
+        "build": "koot-build",
+        "dev": "koot-dev",
+        "analyze": "koot-analyze",
+        "eslint": "eslint \"src/**/*.+(js|jsx)\"",
+        "check-types": "tsc --noEmit",
+        "postinstall": "husky install",
+        "up": "yarn upgrade-interactive --latest"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "bind-event": "^1.1.2",
+        "classnames": "^2.2.6",
+        "koot": "^0.15.0-alpha.2",
+        "mongodb": "^3.6.4"
+    },
+    "devDependencies": {
+        "@types/classnames": "^2.2.11",
+        "autoprefixer": "^10.2.4",
+        "babel-eslint": "^10.1.0",
+        "cssnano": "^4.1.10",
+        "eslint": "^7.19.0",
+        "eslint-config-koot": "^3.1.1",
+        "husky": "^5.0.9",
+        "lint-staged": "^10.5.4",
+        "normalize.css": "^8.0.1",
+        "postcss": "^8.2.6",
+        "postcss-loader": "^5.0.0",
+        "prettier": "^2.2.1",
+        "prettier-eslint": "^12.0.0",
+        "redux-logger": "^3.0.6",
+        "simple-git": "^2.35.0",
+        "svg-url-loader": "^7.1.1",
+        "tailwindcss": "^2.0.3",
+        "url-loader": "^4.1.1"
+    },
+    "bugs": {
+        "url": "https://github.com/cmux/koot/issues"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,cjs,mjs,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md,css,less,sass,scss}": [
+            "prettier --write"
+        ]
+    },
+    "koot": {
+        "version": "0.15.0-alpha.2"
+    }
+}
