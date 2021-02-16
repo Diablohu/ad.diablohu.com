@@ -19,6 +19,7 @@
     "scripts": {
         "start": "koot-start",
         "build": "koot-build",
+        "push": "node scripts/push.js",
         "dev": "koot-dev",
         "analyze": "koot-analyze",
         "eslint": "eslint \"src/**/*.+(js|jsx)\"",
@@ -47,6 +48,7 @@
         "postcss-loader": "^5.0.0",
         "prettier": "^2.2.1",
         "prettier-eslint": "^12.0.0",
+        "pretty-ms": "^7.0.1",
         "redux-logger": "^3.0.6",
         "simple-git": "^2.35.0",
         "svg-url-loader": "^7.1.1",

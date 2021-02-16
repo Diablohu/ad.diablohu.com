@@ -13,7 +13,7 @@ const spinner = require('koot/utils/spinner');
 const spawn = require('./libs/spawn');
 const { dist: pathnameDist } = require('../koot.config');
 
-const repo = 'git@github.com:Diablohu/ad.diablohu.com.git';
+const repo = 'git@github.com:Diablohu/portal.diablohu.com.git';
 const branchDist = 'dist';
 
 // ============================================================================

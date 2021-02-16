@@ -1,6 +1,6 @@
 # Diablohu's Admin Portal
 
-[ad.diablohu.com](https://ad.diablohu.com) 源代码
+[portal.diablohu.com](https://portal.diablohu.com) 源代码
 
 ---
 
