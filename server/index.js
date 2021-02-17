@@ -4184,7 +4184,7 @@ const getChunkmap = (localeId, getFullResult = false, ignoreCache = false) => {
     if (typeof global.chunkmap === 'object') chunkmap = global.chunkmap;
 
     try {
-      chunkmap = JSON.parse("{\".zh\":{\".public\":\"public/\",\".out\":\"public/\",\".entrypoints\":{\"critical\":[\"public/includes/extract.122.dd00dbf58d25b725fb30.css\",\"public/includes/entry.dd00dbf58d25b725fb30.js\"],\"client\":[\"public/includes/entry.02173713f52608b2d874.js\",\"public/includes/entry.7c1a97d3077d39f85016.js\",\"public/includes/extract.47.382194824ec914387174.css\",\"public/includes/entry.382194824ec914387174.js\"],\"__KOOT__CLIENT__RUN__FIRST__\":[\"public/includes/entry.8e242ae68ff0c8b14b37.js\"]},\".files\":{\"critical.css\":\"public/includes/extract.122.dd00dbf58d25b725fb30.css\",\"critical.js\":\"public/includes/entry.dd00dbf58d25b725fb30.js\",\"client.css\":\"public/includes/extract.47.382194824ec914387174.css\",\"client.js\":\"public/includes/entry.382194824ec914387174.js\",\"__KOOT__CLIENT__RUN__FIRST__.js\":\"public/includes/entry.8e242ae68ff0c8b14b37.js\",\"PageHome.js\":\"public/includes/chunk.abe7a6e235cbfeba813a.js\",\"PageStart.js\":\"public/includes/chunk.65e045b2ea626459cecf.js\",\"PageTS.js\":\"public/includes/chunk.d7cfab3dfa98142adc2f.js\",\"libs.js\":\"public/includes/entry.02173713f52608b2d874.js\",\"vendors.js\":\"public/includes/entry.7c1a97d3077d39f85016.js\",\"__KOOT__EXTRACT__CSS__.css\":\"public/includes/extract.all.5f83107d142d6796ce77084fd2519eb8.small.css\"},\"service-worker\":[\"public/service-worker.zh.js\"],\".htmlMetaTags__\":\"<link rel=\\\"shortcut icon\\\" href=\\\"/includes/webapp.7471ef12/favicon.ico\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"/includes/webapp.7471ef12/favicon-16x16.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"/includes/webapp.7471ef12/favicon-32x32.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"48x48\\\" href=\\\"/includes/webapp.7471ef12/favicon-48x48.png\\\"><link rel=\\\"manifest\\\" href=\\\"/includes/webapp.7471ef12/manifest.json\\\"><meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\"><meta name=\\\"theme-color\\\" content=\\\"#0092f5\\\"><meta name=\\\"application-name\\\" content=\\\"Diablohu's Admin Portal\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-57x57.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-60x60.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-72x72.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-76x76.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-114x114.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-120x120.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-144x144.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-152x152.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"167x167\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-167x167.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-180x180.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"1024x1024\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-icon-1024x1024.png\\\"><meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\"><meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\"><meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"Diablohu's Admin Portal\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-640x1136.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-750x1334.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-828x1792.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1125x2436.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1242x2208.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1242x2688.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1536x2048.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1668x2224.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1668x2388.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"  href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-2048x2732.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"  href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1620x2160.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1136x640.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1334x750.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-1792x828.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-2436x1125.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-2208x1242.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-2688x1242.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-2048x1536.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-2224x1668.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-2388x1668.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\" href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-2732x2048.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.7471ef12/apple-touch-startup-image-2160x1620.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"228x228\\\" href=\\\"/includes/webapp.7471ef12/coast-228x228.png\\\"><meta name=\\\"msapplication-TileColor\\\" content=\\\"#212121\\\"><meta name=\\\"msapplication-TileImage\\\" content=\\\"/includes/webapp.7471ef12/mstile-144x144.png\\\"><meta name=\\\"msapplication-config\\\" content=\\\"/includes/webapp.7471ef12/browserconfig.xml\\\"><link rel=\\\"yandex-tableau-widget\\\" href=\\\"/includes/webapp.7471ef12/yandex-browser-manifest.json\\\">\"},\".en\":{\".public\":\"public/\",\".out\":\"public/\",\".entrypoints\":{\"critical\":[\"public/includes/extract.122.dd00dbf58d25b725fb30.css\",\"public/includes/entry.dd00dbf58d25b725fb30.js\"],\"client\":[\"public/includes/entry.02173713f52608b2d874.js\",\"public/includes/entry.7c1a97d3077d39f85016.js\",\"public/includes/extract.47.c035fc2f2b0923c3532e.css\",\"public/includes/entry.c035fc2f2b0923c3532e.js\"],\"__KOOT__CLIENT__RUN__FIRST__\":[\"public/includes/entry.8e242ae68ff0c8b14b37.js\"]},\".files\":{\"critical.css\":\"public/includes/extract.122.dd00dbf58d25b725fb30.css\",\"critical.js\":\"public/includes/entry.dd00dbf58d25b725fb30.js\",\"client.css\":\"public/includes/extract.47.c035fc2f2b0923c3532e.css\",\"client.js\":\"public/includes/entry.c035fc2f2b0923c3532e.js\",\"__KOOT__CLIENT__RUN__FIRST__.js\":\"public/includes/entry.8e242ae68ff0c8b14b37.js\",\"PageHome_3.js\":\"public/includes/chunk.5d077248e483d97e6db8.js\",\"PageStart_4.js\":\"public/includes/chunk.7dce2cbca36153ed2d6c.js\",\"PageTS_5.js\":\"public/includes/chunk.2d05e2e07453390c67c8.js\",\"libs.js\":\"public/includes/entry.02173713f52608b2d874.js\",\"vendors.js\":\"public/includes/entry.7c1a97d3077d39f85016.js\",\"__KOOT__EXTRACT__CSS__.css\":\"public/includes/extract.all.5f83107d142d6796ce77084fd2519eb8.small.css\"},\"service-worker\":[\"public/service-worker.en.js\"],\".htmlMetaTags__\":\"<link rel=\\\"shortcut icon\\\" href=\\\"/includes/webapp.527d0f28/favicon.ico\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"/includes/webapp.527d0f28/favicon-16x16.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"/includes/webapp.527d0f28/favicon-32x32.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"48x48\\\" href=\\\"/includes/webapp.527d0f28/favicon-48x48.png\\\"><link rel=\\\"manifest\\\" href=\\\"/includes/webapp.527d0f28/manifest.json\\\"><meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\"><meta name=\\\"theme-color\\\" content=\\\"#0092f5\\\"><meta name=\\\"application-name\\\" content=\\\"Diablohu's Admin Portal\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-57x57.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-60x60.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-72x72.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-76x76.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-114x114.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-120x120.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-144x144.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-152x152.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"167x167\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-167x167.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-180x180.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"1024x1024\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-icon-1024x1024.png\\\"><meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\"><meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\"><meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"Diablohu's Admin Portal\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-640x1136.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-750x1334.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-828x1792.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1125x2436.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1242x2208.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1242x2688.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1536x2048.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1668x2224.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1668x2388.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"  href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-2048x2732.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"  href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1620x2160.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1136x640.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1334x750.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-1792x828.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-2436x1125.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-2208x1242.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-2688x1242.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-2048x1536.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-2224x1668.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-2388x1668.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\" href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-2732x2048.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.527d0f28/apple-touch-startup-image-2160x1620.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"228x228\\\" href=\\\"/includes/webapp.527d0f28/coast-228x228.png\\\"><meta name=\\\"msapplication-TileColor\\\" content=\\\"#212121\\\"><meta name=\\\"msapplication-TileImage\\\" content=\\\"/includes/webapp.527d0f28/mstile-144x144.png\\\"><meta name=\\\"msapplication-config\\\" content=\\\"/includes/webapp.527d0f28/browserconfig.xml\\\"><link rel=\\\"yandex-tableau-widget\\\" href=\\\"/includes/webapp.527d0f28/yandex-browser-manifest.json\\\">\"}}");
+      chunkmap = JSON.parse("{\".zh\":{\".public\":\"public/\",\".out\":\"public/\",\".entrypoints\":{\"critical\":[\"public/includes/extract.122.6918e54fcd4d0feed044.css\",\"public/includes/entry.6918e54fcd4d0feed044.js\"],\"client\":[\"public/includes/entry.02173713f52608b2d874.js\",\"public/includes/entry.98dc71326346320c4c75.js\",\"public/includes/extract.47.e3edd055205a8081f90a.css\",\"public/includes/entry.e3edd055205a8081f90a.js\"],\"__KOOT__CLIENT__RUN__FIRST__\":[\"public/includes/entry.8e8f49521ddfaca9f75a.js\"]},\".files\":{\"critical.css\":\"public/includes/extract.122.6918e54fcd4d0feed044.css\",\"critical.js\":\"public/includes/entry.6918e54fcd4d0feed044.js\",\"client.css\":\"public/includes/extract.47.e3edd055205a8081f90a.css\",\"client.js\":\"public/includes/entry.e3edd055205a8081f90a.js\",\"__KOOT__CLIENT__RUN__FIRST__.js\":\"public/includes/entry.8e8f49521ddfaca9f75a.js\",\"PageHome.js\":\"public/includes/chunk.abe7a6e235cbfeba813a.js\",\"PageStart.js\":\"public/includes/chunk.65e045b2ea626459cecf.js\",\"PageTS.js\":\"public/includes/chunk.d7cfab3dfa98142adc2f.js\",\"libs.js\":\"public/includes/entry.02173713f52608b2d874.js\",\"vendors.js\":\"public/includes/entry.98dc71326346320c4c75.js\",\"__KOOT__EXTRACT__CSS__.css\":\"public/includes/extract.all.d0365cd9f6e780ed9c9a7772531a356b.small.css\"},\"service-worker\":[\"public/service-worker.zh.js\"],\".htmlMetaTags__\":\"<link rel=\\\"shortcut icon\\\" href=\\\"/includes/webapp.c93f69a2/favicon.ico\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"/includes/webapp.c93f69a2/favicon-16x16.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"/includes/webapp.c93f69a2/favicon-32x32.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"48x48\\\" href=\\\"/includes/webapp.c93f69a2/favicon-48x48.png\\\"><link rel=\\\"manifest\\\" href=\\\"/includes/webapp.c93f69a2/manifest.json\\\"><meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\"><meta name=\\\"theme-color\\\" content=\\\"#181818\\\"><meta name=\\\"application-name\\\" content=\\\"Diablohu's Admin Portal\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-57x57.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-60x60.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-72x72.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-76x76.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-114x114.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-120x120.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-144x144.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-152x152.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"167x167\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-167x167.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-180x180.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"1024x1024\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-icon-1024x1024.png\\\"><meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\"><meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\"><meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"Diablohu's Admin Portal\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-640x1136.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-750x1334.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-828x1792.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1125x2436.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1242x2208.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1242x2688.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1536x2048.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1668x2224.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1668x2388.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"  href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-2048x2732.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"  href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1620x2160.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1136x640.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1334x750.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-1792x828.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-2436x1125.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-2208x1242.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-2688x1242.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-2048x1536.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-2224x1668.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-2388x1668.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\" href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-2732x2048.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.c93f69a2/apple-touch-startup-image-2160x1620.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"228x228\\\" href=\\\"/includes/webapp.c93f69a2/coast-228x228.png\\\"><meta name=\\\"msapplication-TileColor\\\" content=\\\"#212121\\\"><meta name=\\\"msapplication-TileImage\\\" content=\\\"/includes/webapp.c93f69a2/mstile-144x144.png\\\"><meta name=\\\"msapplication-config\\\" content=\\\"/includes/webapp.c93f69a2/browserconfig.xml\\\"><link rel=\\\"yandex-tableau-widget\\\" href=\\\"/includes/webapp.c93f69a2/yandex-browser-manifest.json\\\">\"},\".en\":{\".public\":\"public/\",\".out\":\"public/\",\".entrypoints\":{\"critical\":[\"public/includes/extract.122.6918e54fcd4d0feed044.css\",\"public/includes/entry.6918e54fcd4d0feed044.js\"],\"client\":[\"public/includes/entry.02173713f52608b2d874.js\",\"public/includes/entry.98dc71326346320c4c75.js\",\"public/includes/extract.47.4bb8ce7c5ddb31557881.css\",\"public/includes/entry.4bb8ce7c5ddb31557881.js\"],\"__KOOT__CLIENT__RUN__FIRST__\":[\"public/includes/entry.8e8f49521ddfaca9f75a.js\"]},\".files\":{\"critical.css\":\"public/includes/extract.122.6918e54fcd4d0feed044.css\",\"critical.js\":\"public/includes/entry.6918e54fcd4d0feed044.js\",\"client.css\":\"public/includes/extract.47.4bb8ce7c5ddb31557881.css\",\"client.js\":\"public/includes/entry.4bb8ce7c5ddb31557881.js\",\"__KOOT__CLIENT__RUN__FIRST__.js\":\"public/includes/entry.8e8f49521ddfaca9f75a.js\",\"PageHome_3.js\":\"public/includes/chunk.5d077248e483d97e6db8.js\",\"PageStart_4.js\":\"public/includes/chunk.7dce2cbca36153ed2d6c.js\",\"PageTS_5.js\":\"public/includes/chunk.2d05e2e07453390c67c8.js\",\"libs.js\":\"public/includes/entry.02173713f52608b2d874.js\",\"vendors.js\":\"public/includes/entry.98dc71326346320c4c75.js\",\"__KOOT__EXTRACT__CSS__.css\":\"public/includes/extract.all.d0365cd9f6e780ed9c9a7772531a356b.small.css\"},\"service-worker\":[\"public/service-worker.en.js\"],\".htmlMetaTags__\":\"<link rel=\\\"shortcut icon\\\" href=\\\"/includes/webapp.ad5ec66f/favicon.ico\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"/includes/webapp.ad5ec66f/favicon-16x16.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"/includes/webapp.ad5ec66f/favicon-32x32.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"48x48\\\" href=\\\"/includes/webapp.ad5ec66f/favicon-48x48.png\\\"><link rel=\\\"manifest\\\" href=\\\"/includes/webapp.ad5ec66f/manifest.json\\\"><meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\"><meta name=\\\"theme-color\\\" content=\\\"#181818\\\"><meta name=\\\"application-name\\\" content=\\\"Diablohu's Admin Portal\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-57x57.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-60x60.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-72x72.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-76x76.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-114x114.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-120x120.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-144x144.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-152x152.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"167x167\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-167x167.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-180x180.png\\\"><link rel=\\\"apple-touch-icon\\\" sizes=\\\"1024x1024\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-icon-1024x1024.png\\\"><meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\"><meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\"><meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"Diablohu's Admin Portal\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-640x1136.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-750x1334.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-828x1792.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1125x2436.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1242x2208.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)\\\"    href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1242x2688.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1536x2048.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1668x2224.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"   href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1668x2388.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"  href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-2048x2732.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)\\\"  href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1620x2160.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1136x640.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1334x750.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-1792x828.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-2436x1125.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-2208x1242.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)\\\"   href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-2688x1242.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-2048x1536.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-2224x1668.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-2388x1668.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\" href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-2732x2048.png\\\"><link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)\\\"  href=\\\"/includes/webapp.ad5ec66f/apple-touch-startup-image-2160x1620.png\\\"><link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"228x228\\\" href=\\\"/includes/webapp.ad5ec66f/coast-228x228.png\\\"><meta name=\\\"msapplication-TileColor\\\" content=\\\"#212121\\\"><meta name=\\\"msapplication-TileImage\\\" content=\\\"/includes/webapp.ad5ec66f/mstile-144x144.png\\\"><meta name=\\\"msapplication-config\\\" content=\\\"/includes/webapp.ad5ec66f/browserconfig.xml\\\"><link rel=\\\"yandex-tableau-widget\\\" href=\\\"/includes/webapp.ad5ec66f/yandex-browser-manifest.json\\\">\"}}");
     } catch (e) {
       chunkmap = false;
     }
@@ -8978,6 +8978,18 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./src/constants/keys.js":
+/*!*******************************!*\
+  !*** ./src/constants/keys.js ***!
+  \*******************************/
+/***/ ((module) => {
+
+module.exports = {
+  SESSION_SID: '__DIABLOHU_PORTAL_SESSION_SID'
+};
+
+/***/ }),
+
 /***/ "./src/index.inject.js":
 /*!*****************************!*\
   !*** ./src/index.inject.js ***!
@@ -9010,134 +9022,98 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ "./src/server/routes/index.js");
+/* harmony import */ var koa_session_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! koa-session-store */ "koa-session-store");
+/* harmony import */ var koa_session_store__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(koa_session_store__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _constants_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @constants/keys */ "./src/constants/keys.js");
+/* harmony import */ var _constants_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_constants_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes */ "./src/server/routes/index.js");
+/* harmony import */ var _mongodb__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mongodb */ "./src/server/mongodb.ts");
 /**
  * **服务器端生命周期**
  *
  * _创建 Koa 实例后、挂载任何中间件之前_
  */
 
+
+
+ // import readSecret from './utils/read-secret';
+
+
+const sessionColletionName = _mongodb__WEBPACK_IMPORTED_MODULE_4__.colletions.sessions;
+let axiosBaseSet = false;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (async app => {
-  // 挂载路由
-  app.use(_routes__WEBPACK_IMPORTED_MODULE_0__.default);
-});
+  app.keys = [// await readSecret('ADMIN_PORTAL_2FA_SECRET_FILE')
+  'DIABLOHU_PORTAL_SIGN_KEY'];
+  const client = await (0,_mongodb__WEBPACK_IMPORTED_MODULE_4__.getClient)();
+  const db = client.db(_mongodb__WEBPACK_IMPORTED_MODULE_4__.dbName);
+  const collection = db.collection(sessionColletionName);
+  app.use(koa_session_store__WEBPACK_IMPORTED_MODULE_0___default()({
+    name: _constants_keys__WEBPACK_IMPORTED_MODULE_2__.SESSION_SID,
+    store: {
+      load(sid) {
+        return collection.findOne({
+          _id: sid
+        }).then(data => {
+          return data.blob;
+        }).catch(() => {
+          return null;
+        });
+      },
 
-/***/ }),
+      save(sid, data) {
+        const {
+          isNotBrowser = false,
+          ...rest
+        } = JSON.parse(data); // console.log({ data });
 
-/***/ "./src/server/routes/api.js":
-/*!**********************************!*\
-  !*** ./src/server/routes/api.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+        if (isNotBrowser) return new Promise(resolve => resolve());
+        const doc = {
+          _id: sid,
+          blob: JSON.stringify(rest),
+          updatedAt: new Date()
+        }; // console.log({ doc });
+        // return Promise((resolve) => resolve());
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var fs_extra__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs-extra */ "fs-extra");
-/* harmony import */ var fs_extra__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs_extra__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mongodb */ "mongodb");
-/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_1__);
+        return collection.updateOne({
+          _id: sid
+        }, {
+          $set: doc
+        }, {
+          upsert: true
+        });
+      },
 
- // ============================================================================
-// let db;
-
-const dbName = 'diablohu_com';
-const defaultCollections = ['category', 'project', 'video', 'gallery'];
-let isPrepared = false; // ============================================================================
-
-async function getClient() {
-  if (getClient.client) return getClient.client;
-
-  const readSecret = async (name) => (await fs_extra__WEBPACK_IMPORTED_MODULE_0___default().readFile(process.env[name].replace(/(\\|\/)*%(.+?)%(\\|\/)*/g, (match, p1 = '', p2, p3 = '') => `${p1}${process.env[p2] || ''}${p3}`), 'utf-8')).replace(/\n/g, '').replace(/\r/g, '').trim();
-
-  const USERNAME = await readSecret('MONGO_INITDB_ROOT_USERNAME_FILE');
-  const PASSWORD = await readSecret('MONGO_INITDB_ROOT_PASSWORD_FILE');
-  const uri = 'mongodb://' + `${USERNAME}:${PASSWORD}` + '@host.docker.internal:27017' + '?retryWrites=true&writeConcern=majority';
-  const client = new mongodb__WEBPACK_IMPORTED_MODULE_1__.MongoClient(uri, {
-    useUnifiedTopology: true
-  }); // Connect the client to the server
-
-  getClient.client = await client.connect();
-
-  function exitHandler() {
-    if (client.isConnected()) return client.close(false, function () {
-      // eslint-disable-next-line no-console
-      console.log('MongoDB client close successfully!');
-      process.exit(0);
-    });
-    process.exit(0);
-  }
-
-  process.on('exit', exitHandler); // catches ctrl+c event
-
-  process.on('SIGINT', exitHandler); // catches "kill pid" (for example: nodemon restart)
-
-  process.on('SIGUSR1', exitHandler);
-  process.on('SIGUSR2', exitHandler); // catches uncaught exceptions
-
-  process.on('uncaughtException', exitHandler);
-  return getClient.client;
-} // ============================================================================
-
-
-const apis = {
-  'test-db-connection': async (ctx, db) => {
-    ctx.body = {
-      msg: 'Connected successfully to MongoDB server!',
-      data: (await db.collections()).map(c => c.collectionName)
-    };
-  }
-}; // ============================================================================
-
-const wrap = (ctx, func) => async function () {
-  ctx.set('Access-Control-Allow-Origin', '*');
-  const client = await getClient();
-
-  try {
-    // console.log({ client, isConnected: client.isConnected() });
-    if (!client.isConnected()) {
-      await client.connect();
-    } // Establish and verify connection
-    // await client.db('admin').command({ ping: 1 });
-    // get database
-
-
-    const db = await client.db(dbName); // prepare collections
-
-    if (!isPrepared) {
-      const collectionsCurr = await db.collections();
-      const collectionsToCreate = defaultCollections.filter(name => !collectionsCurr.some(thisCollection => thisCollection.collectionName === name));
-
-      for (const collection of collectionsToCreate) {
-        await db.createCollection(collection);
+      remove(sid) {
+        return collection.deleteOne({
+          _id: sid
+        });
       }
 
-      if (collectionsToCreate.length) {
-        console.warn('Collections created: ', collectionsToCreate);
-      } // console.log({
-      //     collectionsToCreate,
-      //     after: (await db.collections()).map((c) => c.collectionName),
-      // });
+    }
+  })); // 默认值处理
 
+  app.use(async (ctx, next) => {
+    if (!axiosBaseSet) {
+      (axios__WEBPACK_IMPORTED_MODULE_1___default().defaults.baseURL) = ctx.origin; // axios.defaults.headers.common['Diablohu-Is-From-Server'] = 'yes';
 
-      isPrepared = true;
+      axiosBaseSet = true;
     }
 
-    await func(ctx, db);
-  } catch (err) {
-    ctx.status = err.status || 500;
-    ctx.body = err.message;
-    ctx.app.emit('error', err, ctx);
-  } finally {}
-};
-
-for (const [key, func] of Object.entries(apis)) {
-  apis[key] = async ctx => await wrap(ctx, func)();
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (apis);
+    await next();
+    const {
+      session
+    } = ctx;
+    let {
+      reqCount = 0
+    } = session;
+    if (!session.reqFirst) session.reqFirst = Date.now();
+    session.reqCount = ++reqCount;
+    if (/^axios/.test(ctx.headers['user-agent'])) session.isNotBrowser = true; // console.log(ctx.session);
+  });
+  app.use(_routes__WEBPACK_IMPORTED_MODULE_3__.default);
+});
 
 /***/ }),
 
@@ -9155,7 +9131,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var koa_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! koa-router */ "koa-router");
 /* harmony import */ var koa_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(koa_router__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api */ "./src/server/routes/api.js");
+/* harmony import */ var koa_body__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! koa-body */ "koa-body");
+/* harmony import */ var koa_body__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(koa_body__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var node_2fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! node-2fa */ "node-2fa");
+/* harmony import */ var node_2fa__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(node_2fa__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _constants_keys__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @constants/keys */ "./src/constants/keys.js");
+/* harmony import */ var _constants_keys__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_constants_keys__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./api */ "./src/server/routes/api.ts");
+/* harmony import */ var _utils_get_sid_from_ctx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/get-sid-from-ctx */ "./src/server/utils/get-sid-from-ctx.ts");
+/* harmony import */ var _mongodb__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../mongodb */ "./src/server/mongodb.ts");
+
+
+
+
+
 
 
 /** @type {Object} 服务器路由对象 (koa-router) */
@@ -9163,16 +9152,81 @@ __webpack_require__.r(__webpack_exports__);
 const router = koa_router__WEBPACK_IMPORTED_MODULE_0___default()();
 /** @type {Object} 服务器路由表 */
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router.routes()); // ----------------------------------------------------------------------------
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router.routes()); // ============================================================================
 
-router.get('/api/timestamp', async ctx => {
+router.get('/api/generate-2fa-secret/:email', async ctx => {
   ctx.set('Access-Control-Allow-Origin', '*');
-  ctx.body = {
-    ts: Date.now()
-  };
+  ctx.body = (0,node_2fa__WEBPACK_IMPORTED_MODULE_2__.generateSecret)({
+    name: `Diablohu's Portal`,
+    account: ctx.params.email
+  });
 });
 
-for (const [key, value] of Object.entries(_api__WEBPACK_IMPORTED_MODULE_1__.default)) {
+async function getSession(ctx) {
+  ctx.set('Access-Control-Allow-Origin', '*');
+  const sid = ctx.params.sid || (0,_utils_get_sid_from_ctx__WEBPACK_IMPORTED_MODULE_5__.default)(ctx); // console.log({ sid }, ctx.session);
+
+  ctx.body = {
+    session: Object.keys(ctx.session).length ? ctx.session : (await (await (0,_mongodb__WEBPACK_IMPORTED_MODULE_6__.getClient)()).db(_mongodb__WEBPACK_IMPORTED_MODULE_6__.dbName).collection(_mongodb__WEBPACK_IMPORTED_MODULE_6__.colletions.sessions).findOne({
+      _id: sid
+    }).then(doc => {
+      let data;
+
+      try {
+        data = JSON.parse(doc.blob);
+      } catch (e) {}
+
+      return data;
+    })) || null,
+    sid: (0,_utils_get_sid_from_ctx__WEBPACK_IMPORTED_MODULE_5__.default)(ctx)
+  };
+}
+
+router.get('/api/session', getSession);
+router.get('/api/session/:sid', getSession);
+router.post('/api/sign-in', koa_body__WEBPACK_IMPORTED_MODULE_1___default()({
+  multipart: true
+}), async ctx => {
+  ctx.set('Access-Control-Allow-Origin', '*');
+
+  if (ctx.session.auth === true) {
+    ctx.body = {
+      sid: (0,_utils_get_sid_from_ctx__WEBPACK_IMPORTED_MODULE_5__.default)(ctx)
+    };
+    return;
+  }
+
+  const {
+    email,
+    code
+  } = ctx.request?.body || {};
+
+  if (!email || !code) {
+    ctx.status = 406;
+    ctx.body = 'missing parameter'; // ctx.app.emit('error', ctx.body, ctx);
+  }
+
+  const client = await (0,_mongodb__WEBPACK_IMPORTED_MODULE_6__.getClient)();
+  const db = client.db(_mongodb__WEBPACK_IMPORTED_MODULE_6__.dbName);
+  const collection = db.collection(_mongodb__WEBPACK_IMPORTED_MODULE_6__.colletions["2fa"]);
+  const {
+    secret
+  } = await collection.findOne({
+    email
+  });
+
+  if ((0,node_2fa__WEBPACK_IMPORTED_MODULE_2__.verifyToken)(secret, code)) {
+    ctx.session.auth = true;
+    ctx.body = {
+      sid: (0,_utils_get_sid_from_ctx__WEBPACK_IMPORTED_MODULE_5__.default)(ctx)
+    };
+  } else {
+    ctx.status = 403;
+    ctx.body = 'auth failed'; // ctx.app.emit('error', ctx.body, ctx);
+  }
+});
+
+for (const [key, value] of Object.entries(_api__WEBPACK_IMPORTED_MODULE_4__.default)) {
   router.get(`/api/${key}`, value);
 }
 
@@ -9610,6 +9664,246 @@ const doPageinfo = (store, props, pageinfo) => {
 
 /***/ }),
 
+/***/ "./src/server/mongodb.ts":
+/*!*******************************!*\
+  !*** ./src/server/mongodb.ts ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "dbName": () => (/* binding */ dbName),
+/* harmony export */   "colletions": () => (/* binding */ colletions),
+/* harmony export */   "getClient": () => (/* binding */ getClient)
+/* harmony export */ });
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongodb */ "mongodb");
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_get_db_url__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/get-db-url */ "./src/server/utils/get-db-url.ts");
+
+ // ============================================================================
+
+const clients = new Map();
+const dbName = 'portal_diablohu_com';
+const colletions = {
+  sessions: 'sessions',
+  '2fa': 'twofactor'
+}; // ============================================================================
+
+async function getClient(url) {
+  const uri = url ?? (await (0,_utils_get_db_url__WEBPACK_IMPORTED_MODULE_1__.default)()) + '?retryWrites=true&writeConcern=majority';
+  if (clients.has(uri)) return clients.get(uri);
+  const client = new mongodb__WEBPACK_IMPORTED_MODULE_0__.MongoClient(uri, {
+    useUnifiedTopology: true
+  }); // Connect the client to the server
+
+  await client.connect(); //
+
+  clients.set(uri, client);
+  return client;
+} // ============================================================================
+// Exit handler
+
+function exitHandler() {
+  try {
+    Promise.all([...clients].map(([_, client]) => {
+      if (client.isConnected()) return client.close(false);
+      return new Promise(resolve => resolve());
+    })).then(() => {
+      // eslint-disable-next-line no-console
+      console.log(`MongoDB client close successfully!`);
+      process.exit(0);
+    });
+  } catch (e) {
+    if (process) process.exit(0);
+  }
+}
+
+process.on('exit', exitHandler); // catches ctrl+c event
+
+process.on('SIGINT', exitHandler); // catches "kill pid" (for example: nodemon restart)
+
+process.on('SIGUSR1', exitHandler);
+process.on('SIGUSR2', exitHandler); // catches uncaught exceptions
+
+process.on('uncaughtException', exitHandler);
+
+/***/ }),
+
+/***/ "./src/server/routes/api.ts":
+/*!**********************************!*\
+  !*** ./src/server/routes/api.ts ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mongodb */ "./src/server/mongodb.ts");
+ // ============================================================================
+
+// ============================================================================
+// let db;
+const dbName = 'diablohu_com';
+const defaultCollections = ['category', 'project', 'video', 'gallery'];
+let isPrepared = false; // ============================================================================
+
+const apis = {
+  'test-db-connection': async (ctx, db) => {
+    ctx.body = {
+      msg: 'Connected successfully to MongoDB server!',
+      data: (await db.collections()).map(c => c.collectionName)
+    };
+  }
+}; // ============================================================================
+
+const wrap = (ctx, func) => async function () {
+  ctx.set('Access-Control-Allow-Origin', '*');
+  const client = await (0,_mongodb__WEBPACK_IMPORTED_MODULE_0__.getClient)();
+
+  try {
+    // console.log({ client, isConnected: client.isConnected() });
+    if (!client.isConnected()) {
+      await client.connect();
+    } // Establish and verify connection
+    // await client.db('admin').command({ ping: 1 });
+    // get database
+
+
+    const db = client.db(dbName); // prepare collections
+
+    if (!isPrepared) {
+      const collectionsCurr = await db.collections();
+      const collectionsToCreate = defaultCollections.filter(name => !collectionsCurr.some(thisCollection => thisCollection.collectionName === name));
+
+      for (const collection of collectionsToCreate) {
+        await db.createCollection(collection);
+      }
+
+      if (collectionsToCreate.length) {
+        console.warn('Collections created: ', collectionsToCreate);
+      } // console.log({
+      //     collectionsToCreate,
+      //     after: (await db.collections()).map((c) => c.collectionName),
+      // });
+
+
+      isPrepared = true;
+    }
+
+    await func(ctx, db);
+  } catch (err) {
+    ctx.status = err.status || 500;
+    ctx.body = err.message;
+    ctx.app.emit('error', err, ctx);
+  } finally {}
+};
+
+for (const [key, func] of Object.entries(apis)) {
+  apis[key] = async ctx => await wrap(ctx, func)();
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (apis);
+
+/***/ }),
+
+/***/ "./src/server/utils/get-db-url.ts":
+/*!****************************************!*\
+  !*** ./src/server/utils/get-db-url.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _read_secret__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./read-secret */ "./src/server/utils/read-secret.ts");
+
+
+async function getDbUrl(databaseName, collectionName) {
+  if (!databaseName && collectionName) throw new Error('Need databaseName when collectionName exists');
+  const USERNAME = await (0,_read_secret__WEBPACK_IMPORTED_MODULE_0__.default)('MONGO_INITDB_ROOT_USERNAME_FILE');
+  const PASSWORD = await (0,_read_secret__WEBPACK_IMPORTED_MODULE_0__.default)('MONGO_INITDB_ROOT_PASSWORD_FILE');
+  const url = 'mongodb://' + `${USERNAME}:${PASSWORD}` + '@host.docker.internal:27017' + (databaseName ? `/${databaseName}` : '') + (collectionName ? `/${collectionName}` : '');
+  return url;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getDbUrl);
+
+/***/ }),
+
+/***/ "./src/server/utils/get-sid-from-ctx.ts":
+/*!**********************************************!*\
+  !*** ./src/server/utils/get-sid-from-ctx.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _constants_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @constants/keys */ "./src/constants/keys.js");
+/* harmony import */ var _constants_keys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_constants_keys__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function getSid(ctx) {
+  let sid = ctx.cookies.get(_constants_keys__WEBPACK_IMPORTED_MODULE_0__.SESSION_SID);
+
+  if (!!sid) {
+    try {
+      sid = JSON.parse(sid)._sid;
+    } catch (e) {}
+  }
+
+  return sid || undefined;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getSid);
+
+/***/ }),
+
+/***/ "./src/server/utils/read-secret.ts":
+/*!*****************************************!*\
+  !*** ./src/server/utils/read-secret.ts ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var fs_extra__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs-extra */ "fs-extra");
+/* harmony import */ var fs_extra__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs_extra__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * 读取 secret 字符串
+ * - 从环境变量中获取 name 的值
+ * - 读取对应的文件
+ * - 返回文件内容
+ */
+
+const readSecret = async (name) => (await fs_extra__WEBPACK_IMPORTED_MODULE_0___default().readFile((process.env[name] || '').replace(/(\\|\/)*%(.+?)%(\\|\/)*/g, (match, p1 = '', p2, p3 = '') => `${p1}${process.env[p2] || ''}${p3}`), 'utf-8')).replace(/\n/g, '').replace(/\r/g, '').trim();
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (readSecret);
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("axios");;
+
+/***/ }),
+
 /***/ "chalk":
 /*!************************!*\
   !*** external "chalk" ***!
@@ -9709,6 +10003,17 @@ module.exports = require("koa");;
 
 /***/ }),
 
+/***/ "koa-body":
+/*!***************************!*\
+  !*** external "koa-body" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("koa-body");;
+
+/***/ }),
+
 /***/ "koa-convert":
 /*!******************************!*\
   !*** external "koa-convert" ***!
@@ -9742,6 +10047,17 @@ module.exports = require("koa-router");;
 
 /***/ }),
 
+/***/ "koa-session-store":
+/*!************************************!*\
+  !*** external "koa-session-store" ***!
+  \************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("koa-session-store");;
+
+/***/ }),
+
 /***/ "koa-static":
 /*!*****************************!*\
   !*** external "koa-static" ***!
@@ -9761,6 +10077,17 @@ module.exports = require("koa-static");;
 
 "use strict";
 module.exports = require("mongodb");;
+
+/***/ }),
+
+/***/ "node-2fa":
+/*!***************************!*\
+  !*** external "node-2fa" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node-2fa");;
 
 /***/ }),
 
