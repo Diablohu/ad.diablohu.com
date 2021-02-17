@@ -11,6 +11,8 @@
         "paths": {
             "@src": ["./src"],
             "@src/*": ["./src/*"],
+            "@api": ["./src/api"],
+            "@api/*": ["./src/api/*"],
             "@assets": ["./src/assets"],
             "@assets/*": ["./src/assets/*"],
             "@components": ["./src/components"],

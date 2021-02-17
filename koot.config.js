@@ -6,9 +6,14 @@
  * 配置文档请查阅: [https://koot.js.org/#/config]
  */
 
+require('koot/typedef');
+
 const fs = require('fs');
 const path = require('path');
 
+const { SESSION_SID } = require('./src/constants/keys');
+
+/** @type {AppConfig} */
 module.exports = {
     /**************************************************************************
      * 项目基本信息
@@ -32,14 +37,13 @@ module.exports = {
      * 数据存储 & Store
      *************************************************************************/
     store: './src/store',
+    cookiesToStore: [SESSION_SID],
 
     /**************************************************************************
      * 客户端设置 & 生命周期
      *************************************************************************/
-    icon: './src/assets/app-icon.png',
-    webApp: {
-        themeColor: '#0092f5',
-    },
+    icon: './src/assets/app-icon.jpg',
+    webApp: true,
 
     /**************************************************************************
      * 服务器端设置 & 生命周期
@@ -122,6 +126,7 @@ module.exports = {
      *************************************************************************/
     aliases: {
         '@src': path.resolve('./src'),
+        '@api': path.resolve('./src/api'),
         '@assets': path.resolve('./src/assets'),
         '@components': path.resolve('./src/components'),
         '@constants': path.resolve('./src/constants'),

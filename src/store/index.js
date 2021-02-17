@@ -1,12 +1,14 @@
 import { createStore } from 'koot';
 
+import app from './reducers/app';
+
 /**
  * @type {Object|Function} 项目使用的 reducer，接受以下格式/形式
  * - reducer 函数
  * - `combineReducer` 返回的函数结果
  * - 类型是 _Object_ 的 reducer 对照表
  */
-const appReducer = undefined;
+const appReducer = { app };
 
 /** @type {Array} 项目使用的 middleware 列表 */
 const appMiddlewares = [];

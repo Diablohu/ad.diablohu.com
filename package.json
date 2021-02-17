@@ -18,6 +18,7 @@
     },
     "scripts": {
         "start": "koot-start",
+        "test:server": "koot-build -s && node dist/server/index.js",
         "build": "koot-build",
         "push": "node scripts/push.js",
         "dev": "koot-dev",
@@ -31,11 +32,19 @@
         "axios": "^0.21.1",
         "bind-event": "^1.1.2",
         "classnames": "^2.2.6",
+        "koa-body": "^4.2.0",
+        "koa-session-store": "^2.0.0",
         "koot": "^0.15.0-alpha.2",
-        "mongodb": "^3.6.4"
+        "mongodb": "^3.6.4",
+        "node-2fa": "^2.0.1"
     },
     "devDependencies": {
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
         "@types/classnames": "^2.2.11",
+        "@types/fs-extra": "^9.0.7",
+        "@types/koa": "^2.11.8",
+        "@types/mongodb": "^3.6.7",
+        "@webhotelier/webpack-fast-refresh": "5.1.0",
         "autoprefixer": "^10.2.4",
         "babel-eslint": "^10.1.0",
         "cssnano": "^4.1.10",
@@ -49,6 +58,7 @@
         "prettier": "^2.2.1",
         "prettier-eslint": "^12.0.0",
         "pretty-ms": "^7.0.1",
+        "react-refresh": "0.9.0",
         "redux-logger": "^3.0.6",
         "simple-git": "^2.35.0",
         "svg-url-loader": "^7.1.1",

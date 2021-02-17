@@ -1,5 +1,11 @@
-import fs from 'fs-extra';
-import { MongoClient } from 'mongodb';
+import { Db } from 'mongodb';
+import { Context } from 'koa';
+
+import { getClient } from '../mongodb';
+
+// ============================================================================
+
+type APIFunction = (ctx: Context, db: Db) => Promise<void>;
 
 // ============================================================================
 
@@ -10,62 +16,9 @@ let isPrepared = false;
 
 // ============================================================================
 
-async function getClient() {
-    if (getClient.client) return getClient.client;
-
-    const readSecret = async (name) =>
-        (
-            await fs.readFile(
-                process.env[name].replace(
-                    /(\\|\/)*%(.+?)%(\\|\/)*/g,
-                    (match, p1 = '', p2, p3 = '') =>
-                        `${p1}${process.env[p2] || ''}${p3}`
-                ),
-                'utf-8'
-            )
-        )
-            .replace(/\n/g, '')
-            .replace(/\r/g, '')
-            .trim();
-
-    const USERNAME = await readSecret('MONGO_INITDB_ROOT_USERNAME_FILE');
-    const PASSWORD = await readSecret('MONGO_INITDB_ROOT_PASSWORD_FILE');
-
-    const uri =
-        'mongodb://' +
-        `${USERNAME}:${PASSWORD}` +
-        '@host.docker.internal:27017' +
-        '?retryWrites=true&writeConcern=majority';
-
-    const client = new MongoClient(uri, { useUnifiedTopology: true });
-
-    // Connect the client to the server
-    getClient.client = await client.connect();
-
-    function exitHandler() {
-        if (client.isConnected())
-            return client.close(false, function () {
-                // eslint-disable-next-line no-console
-                console.log('MongoDB client close successfully!');
-                process.exit(0);
-            });
-        process.exit(0);
-    }
-    process.on('exit', exitHandler);
-    // catches ctrl+c event
-    process.on('SIGINT', exitHandler);
-    // catches "kill pid" (for example: nodemon restart)
-    process.on('SIGUSR1', exitHandler);
-    process.on('SIGUSR2', exitHandler);
-    // catches uncaught exceptions
-    process.on('uncaughtException', exitHandler);
-
-    return getClient.client;
-}
-
-// ============================================================================
-
-const apis = {
+const apis: {
+    [key: string]: APIFunction;
+} = {
     'test-db-connection': async (ctx, db) => {
         ctx.body = {
             msg: 'Connected successfully to MongoDB server!',
@@ -76,7 +29,7 @@ const apis = {
 
 // ============================================================================
 
-const wrap = (ctx, func) =>
+const wrap = (ctx: Context, func: APIFunction) =>
     async function () {
         ctx.set('Access-Control-Allow-Origin', '*');
 
@@ -90,7 +43,7 @@ const wrap = (ctx, func) =>
             // Establish and verify connection
             // await client.db('admin').command({ ping: 1 });
             // get database
-            const db = await client.db(dbName);
+            const db = client.db(dbName);
 
             // prepare collections
             if (!isPrepared) {
@@ -124,7 +77,7 @@ const wrap = (ctx, func) =>
         }
     };
 for (const [key, func] of Object.entries(apis)) {
-    apis[key] = async (ctx) => await wrap(ctx, func)();
+    apis[key] = async (ctx: Context) => await wrap(ctx, func)();
 }
 
 export default apis;
