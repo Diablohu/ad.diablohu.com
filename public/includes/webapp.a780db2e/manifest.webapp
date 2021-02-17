@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "Diablohu's Admin Portal",
+  "description": null,
+  "icons": {
+    "60": "/includes/webapp.a780db2e/firefox_app_60x60.png",
+    "128": "/includes/webapp.a780db2e/firefox_app_128x128.png",
+    "512": "/includes/webapp.a780db2e/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": null,
+    "url": null
+  }
+}
